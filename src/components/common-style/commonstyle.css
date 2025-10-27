@@ -1,0 +1,160 @@
+.headerMainDiv {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: hsl(192, 57%, 73%);
+    
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+}
+
+.threeLineDiv{
+    width: 30px;
+    height: 3px;
+    border: 2px solid white;
+    background-color: white;
+    margin: 5px 0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.maindevmenu{
+    cursor: pointer;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+}
+
+.firstLetter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffae00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nameHeader {
+    margin-right: 10px;
+    font-size: x-large;
+}
+
+.centerInput{
+    width: 50%;
+}
+
+.centerInput input{
+    width: 100%;
+    padding: 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.sidebardiv{
+    width: 15%;
+    position: fixed;
+    margin-top: 69.5px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.imageDiv {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.imageDiv img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.sidebareachHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sidebareachHeader:hover {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+.homecontent{
+    display: flex;
+    height: 92vh;
+    width: 100%;
+}
+.homeMainContent{
+    margin-left: 250px;
+    padding: 20px;
+    margin-top: 70px;
+    width: calc(100% - 250px);
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.noteInput {
+  background-color: #fff;      
+  border: 1px solid #ddd;       
+  border-radius: 10px;          
+  padding: 16px;                
+  width: 300px;                 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  gap: 12px;                    
+  font-family: 'Arial', sans-serif;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noteInput h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+
+.noteIcons {
+  display: flex;
+  gap: 12px;                   
+}
+
+.noteIcons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-left: 20px;
+}
+
+.noteIcons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.noteInputstylechanges {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
