@@ -89,17 +89,17 @@ function Register() {
   return (
     <div className="registerContainer">
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='authFom'>
             <span className='label'>Name</span>
-            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="name" placeholder="Name" className='inputBox'/>
           {nameError && <p className='errorClass'>{nameError}</p>}
           <br />
             <span className='label'>Email</span>
-            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="email" placeholder="Email" className='inputBox'/>
           {emailError && <span className='errorClass'>{emailError}</span>}
           <br />
             <span className='label'>Password</span>
-            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password" placeholder="Password" className='inputBox'/>
           {passwordError && <span className='errorClass'>{passwordError}</span>}
           <br />
           {error && <span className='errorClass'>{error}</span>}

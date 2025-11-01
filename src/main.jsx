@@ -6,6 +6,7 @@ import Login from './components/loginCompoents/login.jsx';
 import Register from './components/registerComponents/register.jsx';
 import Home from './components/homeComponets/home.jsx';
 import Notes from './components/homeComponets/notes.jsx';
+import Archive from './components/homeComponets/archive.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Navigate to="notes" replace /> },
       { path: 'notes', element: <Notes /> },
+      { path : 'archive', element: <Archive /> },
     ]
   },
 ]);

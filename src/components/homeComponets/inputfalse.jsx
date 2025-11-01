@@ -1,12 +1,14 @@
 import right from "../../assets/check.png";
 import pen from "../../assets/pen.png";
 import photo from "../../assets/photo.png";
-function InputFalse() {
+function InputFalse({onOpen}) {
     return (
         <div className="noteInputstylechanges">
             <div className="noteInput">
                 <div>
-                    <h2>Take a Note...</h2>
+                    <h2 
+                        onClick={onOpen} style={{ cursor: 'text', userSelect: 'none' }}>Take a Note...
+                    </h2>
                 </div>
                 <div className="noteIcons">
                     <img src={pen} alt="pen" />
