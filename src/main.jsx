@@ -7,6 +7,9 @@ import Register from './components/registerComponents/register.jsx';
 import Home from './components/homeComponets/home.jsx';
 import Notes from './components/homeComponets/notes.jsx';
 import Archive from './components/homeComponets/archive.jsx';
+import Reminder from './components/homeComponets/reminder.jsx';
+import EditLabels from './components/homeComponets/editLabels.jsx';
+import Trash from './components/homeComponets/trash.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,6 +23,10 @@ const router = createBrowserRouter([
       { index: true, element: <Navigate to="notes" replace /> },
       { path: 'notes', element: <Notes /> },
       { path : 'archive', element: <Archive /> },
+      { path : 'reminders', element: <Reminder/>},
+      {path : 'editLabels', element: <EditLabels/>},
+      {path : 'trash', element: <Trash/>}
+
     ]
   },
 ]);

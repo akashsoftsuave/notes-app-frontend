@@ -239,9 +239,41 @@ textarea:focus {
 .descriptionElement{
     font-size: 14px;
     color: #666;
+    margin-bottom: 20px;
 }
 
 .container{
     margin-top: 80px;
     padding: 20px;
 }
+
+.active{
+    background-color: #d0eaff;
+    border-radius: 8px;
+}
+
+.notFound{
+    font-size: 30px;
+    color: #f56464;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.noteImg{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    margin-left: 20px;
+}
+
+.noteImg:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
