@@ -247,6 +247,11 @@ textarea:focus {
     padding: 20px;
 }
 
+.containerOther{
+    margin-top: 10px;
+    padding: 20px;
+}
+
 .active{
     background-color: #d0eaff;
     border-radius: 8px;
@@ -275,5 +280,27 @@ textarea:focus {
 .noteImg:hover {
     transform: scale(1.2);
     opacity: 0.8;
+}
+
+.restoreButton {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.restoreButton:hover {
+    background-color: #45a049;
+}
+
+.errorClass {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: -12px;
 }
 

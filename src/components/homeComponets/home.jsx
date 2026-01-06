@@ -1,13 +1,25 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import CommonSidebar from "./commonsidebar";
 import Header from "./header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
 function Home() {
-    const [tabname, setTabname] = useState("Notes");
+    const location = useLocation();
     const navigate = useNavigate();
+
+    const getCurrentTab = () => {
+        const path = location.pathname.split('/').pop();
+        if (path === 'home' || !path) return 'Notes';
+        return path.charAt(0).toUpperCase() + path.slice(1);
+    };
+
+    const [tabname, setTabname] = useState(getCurrentTab());
+
+    useEffect(() => {
+        setTabname(getCurrentTab());
+    }, [location.pathname]);
 
     function handleTabChange(tab) {
         console.log("Tab changed to:", tab);

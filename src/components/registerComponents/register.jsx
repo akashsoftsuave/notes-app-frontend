@@ -92,7 +92,7 @@ function Register() {
         <form onSubmit={handleSubmit} className='authFom'>
             <span className='label'>Name</span>
             <input type="text" name="name" placeholder="Name" className='inputBox'/>
-          {nameError && <p className='errorClass'>{nameError}</p>}
+          {nameError && <span className='errorClass'>{nameError}</span>}
           <br />
             <span className='label'>Email</span>
             <input type="text" name="email" placeholder="Email" className='inputBox'/>

@@ -25,7 +25,7 @@ function EnterNotes({ onAction }) {
             return;
         }
 
-        if(description.length < 3){
+        if(description.length < 10){
             setError('Description must be at least 10 characters long.');
             setTimeout(() => {
                 setError('');

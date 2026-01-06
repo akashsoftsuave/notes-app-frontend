@@ -5,7 +5,6 @@ import bin from "../../assets/bin.png";
 import pin from "../../assets/pin.png";
 import archiveImg from "../../assets/archive.png";
 import editing from "../../assets/editing.png";
-import { meta } from "@eslint/js";
 
 function Notes() {
     const [editMode, setEditMode] = useState(false);

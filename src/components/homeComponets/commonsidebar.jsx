@@ -3,11 +3,24 @@ import alarm from '../../assets/alarm.png'
 import archive from '../../assets/archive.png'
 import bin from '../../assets/bin.png'
 import editing from '../../assets/editing.png'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 function CommonSidebar({ onTabChange }) {
-    const [activeTab, setActiveTab] = useState('notes');
+    const location = useLocation();
+
+    const getCurrentActiveTab = () => {
+        const path = location.pathname.split('/').pop();
+        if (path === 'home' || !path) return 'notes';
+        return path;
+    };
+
+    const [activeTab, setActiveTab] = useState(getCurrentActiveTab());
+
+    useEffect(() => {
+        setActiveTab(getCurrentActiveTab());
+    }, [location.pathname]);
 
     function handleTabClick(tab) {
             onTabChange(tab);
